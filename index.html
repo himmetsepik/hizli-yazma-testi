@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HızlıYaz - Yazma Hızı Testi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<main class="app">
+
+    <section class="hero">
+        <span class="badge">⌨️ Yazma Hızı Testi</span>
+
+        <h1>HızlıYaz</h1>
+
+        <p>Türkçe metinlerle yazma hızını, doğruluğunu ve odaklanmanı test et.</p>
+    </section>
+
+    <section class="stats">
+
+        <div class="stat-card">
+            <span>Süre</span>
+            <strong id="time">15s</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>Kelime/Dakika</span>
+            <strong id="wpm">0</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>Doğruluk</span>
+            <strong id="accuracy">100%</strong>
+        </div>
+
+        <div class="stat-card">
+            <span>Hata</span>
+            <strong id="errors">0</strong>
+        </div>
+
+    </section>
+
+    <section class="time-options">
+      
+        <button class="time-btn active" data-time="15">15s</button>
+        <button class="time-btn" data-time="30">30s</button>
+        <button class="time-btn" data-time="60">60s</button>
+    </section>
+    <center><div id="resultMessage" class="finish-card">
+
+    <div class="finish-icon">🏆</div>
+
+    <div class="finish-content">
+        <h3>Test Tamamlandı!</h3>
+        <p>Sonuçlarını görmek için aşağı kaydır.</p>
+    </div></center>
+
+</div>
+
+    <section class="test-box">
+
+        <div id="textDisplay" class="text-display"></div>
+
+        <textarea
+            id="textInput"
+            placeholder="Yazmaya başlamak için ilk kelimeyi yaz..."
+            spellcheck="false"
+            autocomplete="off"></textarea>
+
+        <div class="actions">
+            <button id="restartBtn">Yeniden Başlat</button>
+        </div>
+
+    </section>
+
+    <section class="result-card" id="resultCard">
+
+        <h2>Sonuçlar</h2>
+
+        <div class="result-grid">
+
+            <div>
+                <span>Kelime/Dakika</span>
+                <strong id="finalWpm">0 WPM</strong>
+            </div>
+
+            <div>
+                <span>Doğruluk</span>
+                <strong id="finalAccuracy">100%</strong>
+            </div>
+
+            <div>
+                <span>Toplam Hata</span>
+                <strong id="finalErrors">0</strong>
+            </div>
+
+            <div>
+                <span>En İyi Skor</span>
+                <strong id="bestScore">0 WPM</strong>
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+<script src="words.js"></script>
+<script src="app.js"></script>
+
+</body>
+</html>
