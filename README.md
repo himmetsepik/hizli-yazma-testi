@@ -30,3 +30,7 @@ A Monkeytype-inspired Turkish typing speed test built with HTML, CSS and JavaScr
 ## 📷 Screenshot
 
 ![Hızlı Yazma Testi](0001.png)
+
+## 🌐 Live Demo
+
+👉 **[Try the Live Demo](https://himmetsepik.github.io/hizli-yazma-testi/)**
