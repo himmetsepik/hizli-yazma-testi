@@ -24,7 +24,6 @@ A Monkeytype-inspired Turkish typing speed test built with HTML, CSS and JavaScr
 - LocalStorage
 
 
-
 ---
 
 ## 📷 Screenshot
